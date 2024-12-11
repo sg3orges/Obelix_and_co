@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using ObelixAndCo.Cells;
+using ObelixAndCo.People;
 
 Console.WriteLine("Hello, World!");
 
@@ -42,4 +43,22 @@ Console.WriteLine(hut.IsOccupied); // False
 for (int i = 0; i < 5; i++)
     hut.AddWorker(); // we can add 5 workers
 Console.WriteLine(hut.IsOccupied); // True
+
+
+
+
+
+
+
+Fisher fisher = new Fisher(new Pond(0, 0));
+Console.WriteLine(fisher.Fish()); // 2
+Console.WriteLine(fisher.Fish()); // 2
+Console.WriteLine(fisher.Fish()); // 2
+Console.WriteLine(fisher.Fish()); // 1
+Console.WriteLine(fisher.Fish()); // 0
+Console.WriteLine(fisher.Fish()); // 1
+
+Cell cell = new Pond(1, 1);
+Fisher fisher2 = new Fisher(cell);
+
 
